@@ -14,8 +14,8 @@
 		<orb v-bind:radius="40" v-bind:color="'white'"></orb>
 		<orb 
 			v-for="orb in orbs"
-            v-bind:y="orb.y"
-            v-bind:x="orb.x"
+            		v-bind:y="orb.y"
+            		v-bind:x="orb.x"
 			v-bind:radius="orb.radius"
 			v-bind:color="orb.color"
 			v-bind:key="orb.id">
@@ -29,11 +29,11 @@
 		`<span 
 			v-bind:class="'circle'" 
 			v-bind:style="{
-            'width':radius+'px', 
-            'height':radius+'px', 
-            'top':y+'%', 
-            'left':x+'%',
-            'background':color}"
+            		'width':radius+'px', 
+            		'height':radius+'px', 
+            		'top':y+'%', 
+            		'left':x+'%',
+            		'background':color}"
 			v-on:click="prompt();">
 		</span>`,
 		methods:{
